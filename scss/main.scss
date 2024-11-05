@@ -1,0 +1,244 @@
+@import "./fonts";
+@import "./normalize";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1240px;
+  width: 100%;
+  margin: 109px auto;
+}
+
+.container-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .main-text {
+    h1 {
+      font-family: "Exo 2", sans-serif;
+      font-size: 52px;
+      font-weight: 600;
+      line-height: 65px;
+      color: #363738;
+    }
+
+    p {
+      color: #6b6b6c;
+      line-height: 24px;
+      font-family: "PT Sans", sans-serif;
+      margin-top: 40px;
+    }
+  }
+}
+
+.main-text {
+  button {
+    border: none;
+    background-color: transparent;
+    margin-top: 40px;
+
+    a {
+      text-decoration: none;
+      color: #363738;
+      font-family: "PT Sans", sans-serif;
+      font-weight: 700;
+      border-bottom: 3px solid #ffce50;
+    }
+  }
+}
+
+.container-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-radius: 20px;
+  border: none;
+  box-shadow: 5px 5px 10px #6b6b6c;
+  padding: 40px 80px;
+
+  .container-block-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border-right: 1px solid #6b6b6c;
+    padding: 40px 60px;
+
+    h2 {
+      font-family: "Exo 2", sans-serif;
+      line-height: 20px;
+      font-size: 20px;
+      font-weight: 600;
+      margin-top: 24px;
+    }
+
+    p {
+      font-family: "PT Sans", sans-serif;
+      line-height: 24px;
+      margin-top: 16px;
+    }
+  }
+  .container-block-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 40px 60px;
+
+    h2 {
+      font-family: "Exo 2", sans-serif;
+      line-height: 20px;
+      font-size: 20px;
+      font-weight: 600;
+      margin-top: 24px;
+    }
+
+    p {
+      font-family: "PT Sans", sans-serif;
+      line-height: 24px;
+      margin-top: 16px;
+    }
+  }
+}
+
+.container-3 {
+  .container-mini {
+    display: flex;
+    align-items: center;
+    width: 447px;
+    gap: 40px;
+  }
+
+  .container-mini-2 {
+    width: 447px;
+    gap: 40px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.text-info {
+  display: flex;
+  align-items: center;
+  gap: 140px;
+}
+
+.text {
+  h2 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #363738;
+    font-family: "Exo 2", sans-serif;
+  }
+
+  p {
+    margin-top: 16px;
+    line-height: 24px;
+    color: #6b6b6c;
+    font-family: "PT Sans", sans-serif;
+  }
+}
+
+.text-info-2 {
+  display: flex;
+  align-items: center;
+  margin-top: 62px;
+  gap: 140px;
+}
+
+@media screen and (max-width: 1440px) {
+  .container-block {
+    width: 23%;
+    .main-text {
+      width: 23%;
+    }
+  }
+  .container-block-2 {
+    width: 23%;
+    .info {
+      width: 23%;
+    }
+  }
+  .container-block-3 {
+    width: 23%;
+  }
+  .container-mini {
+    width: 23%;
+    .text {
+      width: 23%;
+    }
+  }
+  .container-mini-2 {
+    width: 23%;
+    .text {
+      width: 23%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container-block {
+    width: 48%;
+    .main-text {
+      width: 48%;
+    }
+  }
+  .container-block-2 {
+    width: 48%;
+    .info {
+      width: 48%;
+    }
+  }
+  .container-block-3 {
+    width: 48%;
+  }
+  .container-mini {
+    width: 48%;
+    .text {
+      width: 48%;
+    }
+  }
+  .container-mini-2 {
+    width: 48%;
+    .text {
+      width: 48%;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container-block {
+    width: 90%;
+    .main-text {
+      width: 90%;
+    }
+  }
+  .container-block-2 {
+    width: 90%;
+    .info {
+      width: 90%;
+    }
+  }
+  .container-block-3 {
+    width: 90%;
+  }
+  .container-mini {
+    width: 90%;
+    .text {
+      width: 90%;
+    }
+  }
+  .container-mini-2 {
+    width: 90%;
+    .text {
+      width: 90%;
+    }
+  }
+}
